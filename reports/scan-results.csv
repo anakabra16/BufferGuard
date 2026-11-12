@@ -1,0 +1,2 @@
+file,line,rule,pattern,severity,description,code
+/home/ana/BufferGuard-clean/samples/vulnerable.c,17,BG002,strcpy,High,strcpy() does not check destination capacity.,"strcpy(buffer, input);"

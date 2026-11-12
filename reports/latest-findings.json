@@ -1,0 +1,11 @@
+[
+  {
+    "file": "/home/ana/BufferGuard-clean/samples/vulnerable.c",
+    "line": 17,
+    "rule": "BG002",
+    "pattern": "strcpy",
+    "severity": "High",
+    "description": "strcpy() does not check destination capacity.",
+    "code": "strcpy(buffer, input);"
+  }
+]

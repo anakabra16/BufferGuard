@@ -1,0 +1,2 @@
+# BufferGuard currently uses only Python standard-library modules.
+# No external Python packages are required.

@@ -1,0 +1,25 @@
+BUFFERGUARD TEST CASES
+
+BG001 - gets()
+Expected: Critical finding
+
+BG002 - strcpy()
+Expected: High finding
+
+BG003 - strcat()
+Expected: High finding
+
+BG004 - sprintf()
+Expected: High finding
+
+BG005 - scanf("%s")
+Expected: Medium finding
+
+CLEAN INPUT
+Expected: No findings for bounded fgets()
+
+MULTIPLE FINDINGS
+Expected: All configured patterns detected.
+
+LINE NUMBER
+Expected: Correct source line reported.

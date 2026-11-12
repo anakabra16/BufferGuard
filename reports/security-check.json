@@ -1,0 +1,24 @@
+{
+    "project": "BufferGuard",
+    "timestamp_utc": "2026-11-12T08:13:55.010894+00:00",
+    "aslr": {
+        "value": 2,
+        "status": "Full randomization"
+    },
+    "binaries": {
+        "vulnerable": {
+            "binary": "/home/ana/BufferGuard-clean/build/vulnerable",
+            "status": "Success",
+            "return_code": 0,
+            "checksec_output": "RELRO           STACK CANARY      NX            PIE             RPATH      RUNPATH\tSymbols\t\tFORTIFY\tFortified\tFortifiable\tFILE\nPartial RELRO   No canary found   NX enabled    No PIE          No RPATH   No RUNPATH   38 Symbols\t  No\t0\t\t3\t\t/home/ana/BufferGuard-clean/build/vulnerable",
+            "error": ""
+        },
+        "hardened": {
+            "binary": "/home/ana/BufferGuard-clean/build/hardened",
+            "status": "Success",
+            "return_code": 0,
+            "checksec_output": "RELRO           STACK CANARY      NX            PIE             RPATH      RUNPATH\tSymbols\t\tFORTIFY\tFortified\tFortifiable\tFILE\nFull RELRO      Canary found      NX enabled    PIE enabled     No RPATH   No RUNPATH   44 Symbols\t  Yes\t2\t\t3\t\t/home/ana/BufferGuard-clean/build/hardened",
+            "error": ""
+        }
+    }
+}

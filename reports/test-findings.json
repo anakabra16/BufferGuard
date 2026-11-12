@@ -1,0 +1,11 @@
+[
+  {
+    "file": "/tmp/bufferguard-test.c",
+    "line": 2,
+    "rule": "BG002",
+    "pattern": "strcpy",
+    "severity": "High",
+    "description": "strcpy() does not check destination buffer capacity.",
+    "code": "void demo(char *dst, const char *src) { strcpy(dst, src); }"
+  }
+]
